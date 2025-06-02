@@ -1,12 +1,17 @@
 import './App.css'
-import {ThemeToggle} from "./components/ThemeToggle";
+import {Navbar} from "./components/Navbar";
 import { StarBackground } from "./components/StarBackground";
+import { HeroSection } from "./components/HeroSection";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      {/* Theme Toggle */}
       {/* Background Effects */}
-      <StarBackground /></div>
+      <StarBackground />
+      <Navbar />
+      <main>
+        <HeroSection />
+      </main>
+    </div>
   )
 }
