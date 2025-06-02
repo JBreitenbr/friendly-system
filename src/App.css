@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-border: hsl(var(--border));
-  --color-background: hsl(var(--background));
-  --color-foreground: hsl(var(--foreground));
+  --color-border: var(--border);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
 
-  --color-primary: hsl(var(--primary));
-  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
 
-  --color-card: hsl(var(--card));
+  --color-card: var(--card);
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
@@ -63,29 +63,28 @@
 }
 
 @layer base {
-  :root {
-    /*--background: 210 40% 98%;*/
-    background-color: black;
-    --foreground: 222 47% 11%;
+ .dark {
+    --background: #f8fafc;
+    --foreground: #0f1729;
 
-    --card: 0 0% 100%;
+    --card: #ffffff;
 
-    --primary: 250 47% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: #7969c9;
+    --primary-foreground: #f8fafc;
 
-    --border: 214 32% 91%;
+    --border: #e1e7ef;
   }
 
-  .dark {
-    --background: 222 47% 4%;
-    --foreground: 213 31% 91%;
+  :root {
+    --background: #05080f;
+    --foreground: #e1e7ef;
 
-    --card: 222 47% 8%;
+    --card: #0b111e;
 
-    --primary: 250 65% 65%;
-    --primary-foreground: 213 31% 91%;
+    --primary: #7f6ce0;
+    --primary-foreground: #e1e7ef;
 
-    --border: 217 33% 20%;
+    --border: #222f44;
   }
 
   * {
